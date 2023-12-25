@@ -4,3 +4,12 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+.page.theme_light {
+  --font-variation-settings: 400;
+  --font-header: 700;
+}
+
+.page.theme_dark {
+  --font-variation-settings: 465;
+  --font-header: 785;
+}
