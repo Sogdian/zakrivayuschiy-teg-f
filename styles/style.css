@@ -33,3 +33,13 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+.section-width {
+  max-block-size: var(--section-width, 696px);
+}
+
+@media (width <= 375px) {
+  .section-width {
+    max-block-size: 100%;
+  }
+}
