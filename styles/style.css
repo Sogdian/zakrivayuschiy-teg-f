@@ -13,10 +13,23 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-
 .page {
   min-inline-size: 320px;
-  min-block-size: 100dvb;
+  min-block-size: 100 dvb;
   font-family: var(--main-font, sans-serif);
-  font-weight: var(--font-variation-settings, 400);
+  font-variation-settings: 'wght' var(--main-weight, 400);
+  color: var(--accent-color);
+  background-image: repeating-linear-gradient(
+      90deg,
+      var(--background-gradient-color-1) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      var(--background-gradient-color-1) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(var(--background-gradient-color-2), var(--background-gradient-color-3));
+  background-size: cover;
+  background-attachment: fixed;
 }

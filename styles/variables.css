@@ -2,8 +2,11 @@
 :root {
   --main-font: 'Inter-Variable';
   --accent-font: 'PressStart2P-Regular';
-  --font-variation-settings: 400;
+  --main-weight: 400;
   --font-header: 700;
   --background-color: #fff;
   --accent-color: #000;
+  --background-gradient-color-1: #d3d3d3;
+  --background-gradient-color-2: #e7e7e7;
+  --background-gradient-color-3: #1a1a1a;
 }
