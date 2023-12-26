@@ -63,4 +63,9 @@
 
 .header__logo {
   font-size: clamp(3.0625rem, 2.7154rem + 1.4967vw, 4.0625rem);
+  color: var(--accent-color, #000);
+  font-family: var(--accent-font, monospace);
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
 }
