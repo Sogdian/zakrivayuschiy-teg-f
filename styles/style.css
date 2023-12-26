@@ -81,10 +81,55 @@
 }
 
 .theme-menu__button {
-  color: var(--accent-color, #000);
-  font-family: var(--accent-font, monospace);
   font-size: 14px;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  left: -20px;
+  animation: arrow 0.5s ease-in-out infinite alternate;
+  opacity: 0.6;
+}
+
+.theme-menu__button::after {
+  content: "";
+  position: absolute;
+  inline-size: 100%;
+  block-size: 2px;
+  background-color: var(--accent-color, #000);
+  left: 0;
+  bottom: -3px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button:disabled:focus {
+  outline: none;
 }
