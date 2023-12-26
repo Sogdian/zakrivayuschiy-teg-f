@@ -10,16 +10,7 @@
 @font-face {
   font-family: 'Inter-Variable';
   font-style: normal;
-  font-weight: 400 465;
-  font-display: swap;
-  src: url('/Inter-Variable.woff2') format('woff2 supports variations');
-  src: url('/Inter-Variable.woff2') format('woff2-variations');
-}
-
-@font-face {
-  font-family: 'Inter-Variable';
-  font-style: normal;
-  font-weight: 700 785;
+  font-weight: 400 785;
   font-display: swap;
   src: url('/Inter-Variable.woff2') format('woff2 supports variations');
   src: url('/Inter-Variable.woff2') format('woff2-variations');
