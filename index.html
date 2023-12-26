@@ -1,53 +1,76 @@
-<!DOCTYPE html>
-<html lang='ru'>
-<head>
-  <meta charset='UTF-8' />
-  <meta content='width=device-width, initial-scale=1.0' name='viewport' />
-  <meta content='light dark' name='color-scheme' />
-  <title>Закрывающий тег</title>
-  <link href='./svg/favicon.svg' rel='icon' type='image/svg+xml' />
-  <link rel="icon" href="images/favicon.ico" sizes="any" />
-  <link href='./fonts/fonts.css' rel='stylesheet' />
-  <link href='./styles/variables.css' rel='stylesheet' />
-  <link href='./styles/globals.css' rel='stylesheet' />
-  <link href='./styles/style.css' rel='stylesheet' />
-  <link href='./styles/animations.css' rel='stylesheet' />
-  <link href='./styles/themes.css' rel='stylesheet' />
-  <script src='./scripts/set-theme.js'></script>
-</head>
-<body class='page'>
-<header class='header section-width'>
-  <div class="header__logo">&lt;/html&gt;</div>
-  <h1 class="header__heading">закрывающий тег</h1>
-  <nav class='theme-menu header__theme-menu section-width'>
-    <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
-    <ul class='theme-menu__list'>
-      <li class='theme-menu__item'>
-        <button class='theme-menu__button' data-theme='dark' type='button'>
-          Темно
-        </button>
-      </li>
-      <li class='theme-menu__item'>
-        <button
-          class='theme-menu__button'
-          data-theme='auto'
-          disabled
-          type='button'
-        >
-          Авто
-        </button>
-      </li>
-      <li class='theme-menu__item'>
-        <button class='theme-menu__button' data-theme='light' type='button'>
-          Светло
-        </button>
-      </li>
-    </ul>
-  </nav>
-</header>
-<main class='content'>
-
-</main>
-<script src='./scripts/like.js'></script>
-</body>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="light dark" name="color-scheme" />
+    <title>Закрывающий тег</title>
+    <link href="./svg/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="images/favicon.ico" rel="icon" sizes="any" />
+    <link href="./fonts/fonts.css" rel="stylesheet" />
+    <link href="./styles/variables.css" rel="stylesheet" />
+    <link href="./styles/globals.css" rel="stylesheet" />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <link href="./styles/animations.css" rel="stylesheet" />
+    <link href="./styles/themes.css" rel="stylesheet" />
+    <script src="./scripts/set-theme.js"></script>
+  </head>
+  <body class="page">
+    <header class="header section-width">
+      <div class="header__logo">&lt;/html&gt;</div>
+      <h1 class="header__heading">закрывающий тег</h1>
+      <nav class="theme-menu header__theme-menu section-width">
+        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
+        <ul class="theme-menu__list">
+          <li class="theme-menu__item">
+            <button class="theme-menu__button" data-theme="dark" type="button">
+              Темно
+            </button>
+          </li>
+          <li class="theme-menu__item">
+            <button
+              class="theme-menu__button"
+              data-theme="auto"
+              disabled
+              type="button"
+            >
+              Авто
+            </button>
+          </li>
+          <li class="theme-menu__item">
+            <button class="theme-menu__button" data-theme="light" type="button">
+              Светло
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <article class="content-section">
+        <h2 class="content__header">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
+        <div class="content__card">
+          <span class="content__decor">&lt;/html&gt;</span>
+          <img
+            alt="Письменный стол с открытыми книгами и включенной настольной лампой"
+            class="content__picture"
+            loading="lazy"
+            src="images/1.jpg"
+          />
+        </div>
+        <div>
+          <p>
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </p>
+          <p>
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+        </div>
+      </article>
+    </main>
+    <script src="./scripts/like.js"></script>
+  </body>
 </html>

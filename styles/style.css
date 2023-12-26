@@ -133,3 +133,45 @@
 .theme-menu__button:disabled:focus {
   outline: none;
 }
+
+.content {
+  max-width: 696px;
+  margin: 104px auto 0;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--main-font);
+  background-color: var(--background-color, #fff);
+
+}
+
+.content__header {
+  color: var(--accent-color, #000);
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-variation-settings: 'wght' var(--font-header, 400);
+}
+
+.content__card {
+  position: relative;
+}
+
+.content__decor {
+  position: absolute;
+  font-family: var(--accent-font, monospace);
+  font-size: 14px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  top: clamp(1.6875rem, 1.8335rem + -0.6231vw, 1.5625rem);
+  right: clamp(0.6875rem, -0.3347rem + 4.3614vw, 1.5625rem);
+  z-index: 1;
+  -webkit-text-stroke: 1px var(--decor-color, #fff);
+}
+
+.content__picture {
+  width: 100%;
+  height: 100%;
+}
