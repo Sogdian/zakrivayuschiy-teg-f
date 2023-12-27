@@ -221,7 +221,6 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: none;
   border: 2px solid var(--accent-color, #000);
 }
 
@@ -249,11 +248,9 @@
 
 .button:focus {
   outline: none;
-  box-shadow: 2px 2px 0 0 var(--accent-color);
 }
 
 .button:focus-visible {
-  outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
 
@@ -272,6 +269,11 @@
 
 .button:hover::after {
   transform: scaleX(1);
+}
+
+.card__like-button {
+  max-inline-size: 130px;
+  inline-size: 100%;
 }
 
 .button__text {
