@@ -21,3 +21,24 @@
     transform: translateX(4px);
   }
 }
+
+.like-icon .core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon .main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .core {
+  fill: var(--accent-color, #000);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--accent-color, #000);
+  transition: fill 0.3s 0.05s linear;
+}
+
