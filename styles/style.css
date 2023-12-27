@@ -232,6 +232,7 @@
   cursor: pointer;
   transition: box-shadow 0.3s ease;
   overflow: hidden;
+
 }
 
 .button:focus {
@@ -243,3 +244,26 @@
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
+
+.button::after {
+  content: '';
+  position: absolute;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: var(--accent-color, #000);
+  left: 0;
+  bottom: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:hover::after {
+  transform: scaleX(1);
+  /*mix-blend-mode: difference;*/
+}
+
+/*.button__text {*/
+/*  position: relative;*/
+/*  z-index: 1;*/
+/*}*/
