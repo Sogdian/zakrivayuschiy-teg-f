@@ -96,7 +96,7 @@
   content: '▶';
   position: absolute;
   left: -20px;
-  animation: arrow 0.5s ease-in-out infinite alternate;
+  animation: shaking 0.5s ease-in-out infinite alternate;
   opacity: 0.6;
 }
 
