@@ -228,7 +228,7 @@
   padding: 9px 17px;
   font-family: var(--accent-font, monospace);
   font-size: 14px;
-  color: var(--accent-color, #000);
+  color: var(--decor-color, #fff);
   cursor: pointer;
   transition: box-shadow 0.3s ease;
   overflow: hidden;
@@ -260,10 +260,10 @@
 
 .button:hover::after {
   transform: scaleX(1);
-  /*mix-blend-mode: difference;*/
 }
 
-/*.button__text {*/
-/*  position: relative;*/
-/*  z-index: 1;*/
-/*}*/
+.button__text {
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: difference;
+}
