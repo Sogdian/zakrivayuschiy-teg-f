@@ -55,7 +55,7 @@
   font-family: var(--accent-font);
   text-transform: uppercase;
   background-color: var(--background-color, #fff);
-  margin: 0 auto;
+  margin: 102px auto;
   border: 2px solid var(--accent-color, #000);
 }
 
