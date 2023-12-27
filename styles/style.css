@@ -233,3 +233,13 @@
   transition: box-shadow 0.3s ease;
   overflow: hidden;
 }
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 0 var(--accent-color);
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px 0 0 var(--accent-color);
+}
