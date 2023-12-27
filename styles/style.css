@@ -281,3 +281,8 @@
   z-index: 1;
   mix-blend-mode: difference;
 }
+
+.card__save-button {
+  display: flex;
+  margin: 54px auto clamp(6.375rem, 6.156rem + 0.9346vw, 6.5625rem);
+}
