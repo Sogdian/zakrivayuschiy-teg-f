@@ -209,6 +209,15 @@
   max-block-size: 38px;
 }
 
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: none;
+  border: 2px solid var(--accent-color, #000);
+}
+
 .content__button {
   display: flex;
   justify-content: flex-end;
@@ -232,7 +241,6 @@
   cursor: pointer;
   transition: box-shadow 0.3s ease;
   overflow: hidden;
-
 }
 
 .button:focus {
