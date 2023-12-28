@@ -15,7 +15,7 @@
 */
 .page {
   min-inline-size: 320px;
-  min-block-size: 100 dvb;
+  min-block-size: 100dvb;
   font-family: var(--main-font, sans-serif);
   font-variation-settings: 'wght' var(--main-weight, 400);
   color: var(--accent-color);
@@ -295,6 +295,10 @@
   width: clamp(19.125rem, 17.0076rem + 9.0343vw, 20.9375rem);
 }
 
+.svg__save-button {
+  mix-blend-mode: difference;
+}
+
 .subscribe-dialog {
   display: flex;
   flex-direction: column;
@@ -387,5 +391,10 @@
 
   .card__save-button {
     flex-direction: column;
+  }
+
+  .svg__save-button {
+    inline-size: 28px;
+    block-size: 28px;
   }
 }

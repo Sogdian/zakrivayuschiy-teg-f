@@ -533,10 +533,9 @@
   </article>
   <button aria-controls='subscribe'
           class='button card__save-button'
-          onclick="window['subscribe'].showModal();"
+          onclick="window['subscribe'].showModal()"
           type='button'>
-    <svg height='21'
-         width='21'>
+    <svg class='svg__save-button' width='21' height='21' viewBox="0 0 39 39">
       <use href='/svg/subscribe.svg#subscribe'/>
     </svg>
     <span class='button__text'>Сохранить на память</span>
@@ -544,8 +543,7 @@
   <dialog class='subscribe-dialog' id='subscribe'>
     <div class='subscribe-content'>
       <h3 class='subscribe-header'>Вставьте<br>дискету, чтобы продолжить</h3>
-      <svg height='39'
-           width='39'>
+      <svg width='39' height='39' viewBox="0 0 39 39">
         <use href='/svg/subscribe.svg#subscribe'/>
       </svg>
     </div>
