@@ -520,9 +520,27 @@
           </button>
         </div>
       </article>
-      <button class="button card__save-button" type="button">
+      <button class="button card__save-button"
+              type="button"
+              onclick="window['subscribe'].showModal();"
+              aria-controls="dialog-id">
         <span class="button__text">Сохранить на память</span>
       </button>
+      <dialog class="subscribe-dialog" id="subscribe">
+        <div class='subscribe-content'>
+          <h3 class="subscribe-header">Вставьте</br>дискету, чтобы продолжить</h3>
+          <svg width="39"
+               height="39">
+            <use href="/svg/subscribe.svg#subscribe">
+          </svg>
+        </div>
+        <form class='subscribe-form'>
+          <label for="ок"></label>
+          <button class="button subscribe-button" type="button" id="ок">
+            <span class="button__text">ок</span>
+          </button>
+        </form>
+      </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

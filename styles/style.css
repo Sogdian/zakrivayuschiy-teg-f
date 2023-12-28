@@ -289,3 +289,55 @@
   display: flex;
   margin: 0 auto clamp(6.375rem, 6.156rem + 0.9346vw, 6.5625rem);
 }
+
+.subscribe-dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 32px 32px 30px;
+  border-color: var(--accent-color, #000);
+  border: 2px solid var(--accent-color, #000);
+}
+
+.subscribe-dialog::backdrop {
+  background-color: var(--opacity-background, #000);
+  opacity: 0.75;
+
+}
+
+.subscribe-content {
+  display: flex;
+  flex-direction: row-reverse;
+  width: clamp(16.0625rem, 13.434rem + 11.215vw, 18.3125rem);
+  /*grid-template-columns: 39px clamp(12.375rem, 9.7465rem + 11.215vw, 14.625rem);*/
+  gap: 20px;
+}
+
+.subscribe-header {
+  color: var(--accent-color, #000);
+  font-family: var(--accent-font, monospace);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  width: clamp(198px, 9.7465rem + 11.215vw, 234px);
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-button {
+  /*max-inline-size: 293px;*/
+  inline-size: 100%;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+@media (width < 696px) {
+  .subscribe-dialog {
+    padding: 32px 38px;
+  }
+}
