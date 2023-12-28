@@ -296,6 +296,7 @@
 }
 
 .svg__save-button {
+  /*color: var(--decor-color, #fff);*/
   mix-blend-mode: difference;
 }
 
@@ -307,6 +308,7 @@
   border-color: var(--accent-color, #000);
   border: 2px solid var(--accent-color, #000);
   background-color: var(--background-color, #fff);
+  color: var(--accent-color, #000);
 }
 
 .subscribe-dialog:not([open]) {
