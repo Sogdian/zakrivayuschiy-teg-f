@@ -15,7 +15,7 @@
 */
 .page {
   min-inline-size: 320px;
-  min-block-size: 100dvb;
+  min-block-size: 100 dvb;
   font-family: var(--main-font, sans-serif);
   font-variation-settings: 'wght' var(--main-weight, 400);
   color: var(--accent-color);
@@ -296,7 +296,6 @@
 }
 
 .subscribe-save-button {
-  /*color: var(--decor-color, #fff);*/
   mix-blend-mode: difference;
   z-index: 1;
 }
@@ -326,7 +325,6 @@
   display: flex;
   flex-direction: row-reverse;
   width: clamp(16.0625rem, 13.434rem + 11.215vw, 18.3125rem);
-  /*grid-template-columns: 39px clamp(12.375rem, 9.7465rem + 11.215vw, 14.625rem);*/
   gap: 20px;
 }
 
@@ -347,13 +345,10 @@
 }
 
 .subscribe-button {
-  /*max-inline-size: 293px;*/
   inline-size: 100%;
   line-height: 1.5;
   text-transform: uppercase;
 }
-
-
 
 .saturate {
   filter: saturate(30%);
