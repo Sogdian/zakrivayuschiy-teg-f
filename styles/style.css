@@ -295,9 +295,10 @@
   width: clamp(19.125rem, 17.0076rem + 9.0343vw, 20.9375rem);
 }
 
-.svg__save-button {
+.subscribe-save-button {
   /*color: var(--decor-color, #fff);*/
   mix-blend-mode: difference;
+  z-index: 1;
 }
 
 .subscribe-dialog {
@@ -395,7 +396,7 @@
     flex-direction: column;
   }
 
-  .svg__save-button {
+  .subscribe-save-button {
     inline-size: 28px;
     block-size: 28px;
   }
