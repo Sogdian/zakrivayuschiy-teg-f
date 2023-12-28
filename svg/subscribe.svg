@@ -2,7 +2,6 @@
      fill="none"
      viewBox="0 0 40 40">
   <symbol id="subscribe"
-          stroke="currentColor"
           fill="currentColor"
   >
     <path fill="var(--accent-color)"

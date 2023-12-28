@@ -297,6 +297,12 @@
   padding: 32px 32px 30px;
   border-color: var(--accent-color, #000);
   border: 2px solid var(--accent-color, #000);
+  background-color: var(--background-color, #fff);
+}
+
+.subscribe-dialog:not([open]) {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .subscribe-dialog::backdrop {
@@ -340,4 +346,12 @@
   .subscribe-dialog {
     padding: 32px 38px;
   }
+}
+
+.brightness {
+  filter: brightness(200%);
+}
+
+.contrast {
+  filter: contrast(20%);
 }
