@@ -283,11 +283,16 @@
   position: relative;
   z-index: 1;
   mix-blend-mode: difference;
+  line-height: 0.9;
 }
 
 .card__save-button {
   display: flex;
+  gap: 8px;
   margin: 0 auto clamp(6.375rem, 6.156rem + 0.9346vw, 6.5625rem);
+  padding: 15px 18px;
+  align-items: center;
+  width: clamp(19.125rem, 17.0076rem + 9.0343vw, 20.9375rem);
 }
 
 .subscribe-dialog {
@@ -341,11 +346,7 @@
   text-transform: uppercase;
 }
 
-@media (width < 696px) {
-  .subscribe-dialog {
-    padding: 32px 38px;
-  }
-}
+
 
 .saturate {
   filter: saturate(30%);
@@ -377,4 +378,14 @@
 
 .grayscale {
   filter: grayscale(80%);
+}
+
+@media (width < 696px) {
+  .subscribe-dialog {
+    padding: 32px 38px;
+  }
+
+  .card__save-button {
+    flex-direction: column;
+  }
 }
