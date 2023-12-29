@@ -15,7 +15,7 @@
 */
 .page {
   min-inline-size: 320px;
-  min-block-size: 100 dvb;
+  min-block-size: 100dvb;
   font-family: var(--main-font, sans-serif);
   font-variation-settings: 'wght' var(--main-weight, 400);
   color: var(--accent-color);
@@ -38,7 +38,7 @@
 }
 
 .section-width {
-  max-width: 696px;
+  max-width: 700px;
 }
 
 @media (width <= 375px) {
@@ -48,7 +48,9 @@
 }
 
 .header {
-  padding: clamp(7.5rem, 6.3318rem + 4.9844vw, 8.5rem) 0 25px;
+  /*padding: clamp(7.5rem, 6.3318rem + 4.9844vw, 8.5rem) 0 25px;*/
+  padding: clamp(7.5rem, 6.2288rem + 5.4237vw, 8.5rem) 0 25px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +62,7 @@
 }
 
 .header__logo {
-  font-size: clamp(3.0625rem, 1.8943rem + 4.9844vw, 4.0625rem);
+  font-size: clamp(3.0625rem, 1.7913rem + 5.4237vw, 4.0625rem);
   color: var(--accent-color, #000);
   font-family: var(--accent-font, monospace);
   font-style: normal;
@@ -73,7 +75,7 @@
   text-transform: uppercase;
   color: var(--accent-color, #000);
   font-family: var(--accent-font, monospace);
-  font-size: clamp(0.875rem, 0.2179rem + 2.8037vw, 1.4375rem);
+  font-size: clamp(0.875rem, 0.16rem + 3.0508vw, 1.4375rem);
   margin-block-end: 25px;
 }
 
@@ -174,8 +176,8 @@
   text-transform: uppercase;
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  top: clamp(1.6875rem, 1.8335rem + -0.6231vw, 1.5625rem);
-  right: clamp(0.6875rem, -0.3347rem + 4.3614vw, 1.5625rem);
+  top: clamp(1.4375rem, 1.2786rem + 0.678vw, 1.5625rem);
+  right: clamp(0.6875rem, -0.4248rem + 4.7458vw, 1.5625rem);
   z-index: 1;
   -webkit-text-stroke: 1px var(--decor-color, #fff);
 }
@@ -289,10 +291,10 @@
 .card__save-button {
   display: flex;
   gap: 8px;
-  margin: 0 auto clamp(6.375rem, 6.156rem + 0.9346vw, 6.5625rem);
+  margin: 0 auto clamp(6.25rem, 6.0117rem + 1.0169vw, 6.4375rem);;
   padding: 15px 18px;
   align-items: center;
-  width: clamp(19.125rem, 17.0076rem + 9.0343vw, 20.9375rem);
+  width: clamp(19.375rem, 17.071rem + 9.8305vw, 21.1875rem);
 }
 
 .subscribe-save-button {
@@ -322,7 +324,7 @@
 .subscribe-content {
   display: flex;
   flex-direction: row-reverse;
-  width: clamp(16.0625rem, 13.434rem + 11.215vw, 18.3125rem);
+  width: clamp(16.0625rem, 13.2023rem + 12.2034vw, 18.3125rem);
   gap: 20px;
 }
 
@@ -334,7 +336,7 @@
   font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase;
-  width: clamp(198px, 9.7465rem + 11.215vw, 234px);
+  width: clamp(12.375rem, 9.5148rem + 12.2034vw, 14.625rem);
 }
 
 .subscribe-form {
