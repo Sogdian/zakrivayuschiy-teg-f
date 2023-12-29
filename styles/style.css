@@ -19,20 +19,20 @@
   font-family: var(--main-font, sans-serif);
   font-variation-settings: 'wght' var(--main-weight, 400);
   color: var(--accent-color);
-  background-image: repeating-linear-gradient(
-      90deg,
-      var(--background-gradient-color-1) 0 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(
-      0deg,
-      var(--background-gradient-color-1) 0 2px,
-      transparent 2px 4px
-    ),
-    linear-gradient(
-      var(--background-gradient-color-2),
-      var(--background-gradient-color-3)
-    );
+  /*background-image: repeating-linear-gradient(*/
+  /*    90deg,*/
+  /*    var(--background-gradient-color-1) 0 2px,*/
+  /*    transparent 2px 4px*/
+  /*  ),*/
+  /*  repeating-linear-gradient(*/
+  /*    0deg,*/
+  /*    var(--background-gradient-color-1) 0 2px,*/
+  /*    transparent 2px 4px*/
+  /*  ),*/
+  /*  linear-gradient(*/
+  /*    var(--background-gradient-color-2),*/
+  /*    var(--background-gradient-color-3)*/
+  /*  );*/
   background-size: cover;
   background-attachment: fixed;
 }
@@ -48,17 +48,14 @@
 }
 
 .header {
-  /*padding: clamp(7.5rem, 6.3318rem + 4.9844vw, 8.5rem) 0 25px;*/
   padding: clamp(7.5rem, 6.3462rem + 4.9231vw, 8.5rem) 0 25px;
-
-
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: var(--accent-font);
   text-transform: uppercase;
   background-color: var(--background-color, #fff);
-  margin: 102px auto 104px;
+  margin: 102px auto 100px;
   border: 2px solid var(--accent-color, #000);
 }
 
@@ -161,6 +158,11 @@
   font-family: var(--main-font);
   background-color: var(--background-color, #fff);
   border: 2px solid var(--accent-color, #000);
+  color: var(--accent-color, #000);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.16;
 }
 
 .content__header {
@@ -170,6 +172,7 @@
   font-variation-settings: 'wght' var(--font-header, 400);
   border-block-end: 2px solid var(--accent-color, #000);
   padding: 3px 0 3px 10px;
+  line-height: 1.2;
 }
 
 .content__card {
@@ -217,7 +220,7 @@
 .content__button {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 5px;
   padding: 0 25px 25px;
 }
 
