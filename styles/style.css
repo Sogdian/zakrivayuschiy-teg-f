@@ -307,11 +307,6 @@
   color: var(--accent-color, #000);
 }
 
-/*.subscribe-dialog:not([open]) {*/
-/*  opacity: 0;*/
-/*  pointer-events: none;*/
-/*}*/
-
 .subscribe-dialog[open] {
   display: flex;
   flex-direction: column;
