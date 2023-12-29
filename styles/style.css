@@ -55,7 +55,7 @@
   font-family: var(--accent-font);
   text-transform: uppercase;
   background-color: var(--background-color, #fff);
-  margin: 100px auto 100px;
+  margin: 100px auto 101px;
   border: 2px solid var(--accent-color, #000);
 }
 
@@ -152,7 +152,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 50.5px;
+  gap: 51.5px;
 }
 
 .content-section {
@@ -398,6 +398,15 @@
 }
 
 @media (width < 700px) {
+  .content__header {
+    padding: 4px 10px 6px;
+    line-height: 1.2;
+  }
+
+  .content-section {
+    line-height: 1.1;
+  }
+
   .subscribe-dialog {
     padding: 32px 38px;
   }
