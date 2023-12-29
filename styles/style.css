@@ -398,13 +398,17 @@
 }
 
 @media (width < 700px) {
+  .content {
+    gap: 51px;
+  }
+
   .content__header {
     padding: 4px 10px 6px;
     line-height: 1.2;
   }
 
   .content-section {
-    line-height: 1.1;
+    line-height: 1.16;
   }
 
   .subscribe-dialog {
@@ -413,6 +417,7 @@
 
   .card__save-button {
     flex-direction: column;
+    /*padding: 16px 19px;*/
   }
 
   .subscribe-save-button {
