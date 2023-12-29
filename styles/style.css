@@ -301,22 +301,25 @@
 }
 
 .subscribe-dialog {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding: 32px 32px 30px;
   border-color: var(--accent-color, #000);
   border: 2px solid var(--accent-color, #000);
   background-color: var(--background-color, #fff);
   color: var(--accent-color, #000);
 }
 
-.subscribe-dialog:not([open]) {
-  opacity: 0;
-  pointer-events: none;
+/*.subscribe-dialog:not([open]) {*/
+/*  opacity: 0;*/
+/*  pointer-events: none;*/
+/*}*/
+
+.subscribe-dialog[open] {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 32px 32px 30px;
 }
 
-.subscribe-dialog::backdrop {
+.subscribe-dialog[open]::backdrop {
   background-color: var(--opacity-background, #000);
   opacity: 0.75;
 }
