@@ -193,16 +193,16 @@
   top: clamp(1.4375rem, 1.2786rem + 0.678vw, 1.5625rem);
   right: clamp(0.6875rem, -0.4248rem + 4.7458vw, 1.5625rem);
   z-index: 1;
-  -webkit-text-stroke: 1px var(--decor-color, #fff);
+  -webkit-text-stroke: 1px var(--background-color, #fff);
 }
 
 @supports (
   (text-stroke: 1px var(--decor-color, #fff)) or
-    (-webkit-text-stroke: 1px var(--decor-color, #fff))
+    (-webkit-text-stroke: 1px var(--background-color, #fff))
 ) {
   .content__decor {
-    -webkit-text-stroke: 1px var(--decor-color, #fff);
-    text-stroke: 1px var(--decor-color, #fff);
+    -webkit-text-stroke: 1px var(--background-color, #fff);
+    text-stroke: 1px var(--background-color, #fff);
     text-shadow: none;
   }
 }
