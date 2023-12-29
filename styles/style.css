@@ -19,20 +19,20 @@
   font-family: var(--main-font, sans-serif);
   font-variation-settings: 'wght' var(--main-weight, 400);
   color: var(--accent-color);
-  /*background-image: repeating-linear-gradient(*/
-  /*    90deg,*/
-  /*    var(--background-gradient-color-1) 0 2px,*/
-  /*    transparent 2px 4px*/
-  /*  ),*/
-  /*  repeating-linear-gradient(*/
-  /*    0deg,*/
-  /*    var(--background-gradient-color-1) 0 2px,*/
-  /*    transparent 2px 4px*/
-  /*  ),*/
-  /*  linear-gradient(*/
-  /*    var(--background-gradient-color-2),*/
-  /*    var(--background-gradient-color-3)*/
-  /*  );*/
+  background-image: repeating-linear-gradient(
+      90deg,
+      var(--background-gradient-color-1) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      var(--background-gradient-color-1) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      var(--background-gradient-color-2),
+      var(--background-gradient-color-3)
+    );
   background-size: cover;
   background-attachment: fixed;
 }
@@ -214,7 +214,7 @@
   flex-direction: column;
   gap: 27px;
   border-block-start: 2px solid var(--accent-color, #000);
-  padding: 25px 25px 25px;
+  padding: 25px;
 }
 
 .content__button {
@@ -228,7 +228,7 @@
 .card__icon-button {
   background-color: transparent;
   border: 2px solid transparent;
-  padding: 2px 0 0 0;
+  padding: 2px 0 0;
   transition: border 0.3s ease;
   max-block-size: 38px;
 }
@@ -303,7 +303,7 @@
 .card__save-button {
   display: flex;
   gap: 8px;
-  margin: 0 auto clamp(6.25rem, 6.0117rem + 1.0169vw, 6.4375rem);;
+  margin: 0 auto clamp(6.25rem, 6.0117rem + 1.0169vw, 6.4375rem);
   padding: 15px 19px;
   align-items: center;
   inline-size: clamp(19.375rem, 17.071rem + 9.8305vw, 21.1875rem);
